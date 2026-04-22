@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prendre rendez-vous | Gabrièle Nataf Avocat</title>
+    <link rel="icon" type="image/png" href="assets/logo_gn_blue.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific overrides for this page */
+        .booking-page-main {
+            padding-top: 180px;
+            padding-bottom: 100px;
+            min-height: 80vh;
+        }
+
+        .booking-title {
+            font-size: 4.5rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .booking-subtitle-secondary {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .prep-list-centered {
+            display: table;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        /* Large CTA Card adjustments */
+        .cta-card {
+            max-width: 900px;
+            margin: 60px auto 0;
+            background-color: #fdfdfc;
+            border: 1px solid rgba(185, 116, 83, 0.1);
+            padding: 50px 30px;
+        }
+
+        @media (max-width: 768px) {
+            .booking-page-main {
+                padding-top: 120px;
+                padding-bottom: 60px;
+            }
+
+            .booking-title {
+                font-size: 2.8rem;
+                letter-spacing: -0.5px;
+            }
+
+            .booking-subtitle-secondary {
+                font-size: 1.8rem;
+            }
+
+            .cta-card {
+                padding: 30px 20px;
+                margin-top: 40px;
+            }
+
+            .btn-appointment {
+                width: 100%;
+                font-size: 0.9rem !important;
+                padding: 15px 15px !important;
+                white-space: normal;
+                line-height: 1.4;
+            }
+        }
+    </style>
+</head>
+
+<body class="booking-body">
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo_gn_blue.png" alt="Cabinet Gabrièle Nataf" class="logo-large">
+                </a>
+            </div>
+            <div class="nav-right">
+                <button class="hamburger" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="index.html#domaines">Domaines</a></li>
+                    <li><a href="index.html#a-propos">À propos</a></li>
+                    <li class="nav-appointment-desktop"><a href="index.html" class="btn btn-appointment">Retour à
+                            l'accueil</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container booking-page-main reveal">
+        <div class="text-center mb-5">
+            <h1 class="booking-title">Prendre rendez-vous</h1>
+            <p class="section-subtitle">Le cabinet vous accompagne avec rigueur et humanité. <br>Consultations au
+                cabinet ou en visioconférence.</p>
+        </div>
+
+        <div class="section-divider mb-5"></div>
+
+        <!-- Premium Grid Layout -->
+        <div class="grid grid-4 mb-5">
+            <!-- Address -->
+            <a href="agenda.html" class="card card-illustration reveal reveal-delay-1"
+                style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                <div class="illustration-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                </div>
+                <h3>Au Cabinet</h3>
+                <p>5 rue du Renard,<br>75004 Paris</p>
+            </a>
+
+            <!-- Visio -->
+            <a href="agenda.html" class="card card-illustration reveal reveal-delay-2"
+                style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                <div class="illustration-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <h3>Visioconférence</h3>
+                <p>Consultation à distance possible<br>sur demande simple.</p>
+            </a>
+
+            <!-- Phone (New) -->
+            <a href="agenda.html" class="card card-illustration reveal reveal-delay-3"
+                style="text-decoration: none; color: inherit; display: block; cursor: pointer;">
+                <div class="illustration-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                </div>
+                <h3>Téléphone</h3>
+                <p>Sur demande<br><span style="opacity:0; user-select:none;">.</span></p>
+            </a>
+
+            <!-- Email (No Phone) -->
+            <a href="mailto:contact@natafavocat.com" class="card card-illustration reveal reveal-delay-4"
+                style="text-decoration: none; color: inherit; display: block;">
+                <div class="illustration-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                </div>
+                <h3>Contact</h3>
+                <p>contact@natafavocat.com<br><span style="opacity:0; user-select:none;">.</span></p>
+                <!-- Spacer to align heights -->
+            </a>
+        </div>
+
+        <!-- Main CTA & Info -->
+        <div class="card cta-card text-center reveal reveal-delay-2">
+            <div class="calendar-inner">
+                <h2 class="booking-subtitle-secondary">Réserver une consultation</h2>
+                <p style="max-width: 600px; margin: 0 auto 40px; color: #555;">
+                    Pour convenir d'un rendez-vous, nous vous invitons à nous adresser un courriel en précisant
+                    succinctement l'objet de votre demande.
+                </p>
+                <a href="mailto:contact@natafavocat.com" class="btn btn-primary btn-appointment">Demander un rendez-vous
+                    par email</a>
+            </div>
+
+            <div class="section-divider mt-5 mb-5" style="width: 40px; opacity: 0.1;"></div>
+
+            <div class="text-center">
+                <h4
+                    style="font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; margin-bottom: 20px; color: var(--primary-color);">
+                    Pour votre premier rendez-vous</h4>
+                <div class="prep-list-centered">
+                    <ul class="prep-list-minimal">
+                        <li>Pièce d'identité en cours de validité</li>
+                        <li>Documents relatifs à la procédure (décisions, courriers)</li>
+                        <li>Chronologie succincte des faits</li>
+                        <li>Vos principales questions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="assets/logo_gn_white.png" alt="Cabinet Gabrièle Nataf"
+                    style="height: 100px; margin: 0 auto 20px auto; display: block;">
+            </div>
+            <p>&copy; 2026 Gabrièle Nataf Avocat. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

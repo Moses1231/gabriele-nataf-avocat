@@ -1,0 +1,4 @@
+.env
+.firebase/
+upredict_backup/
+node_modules/

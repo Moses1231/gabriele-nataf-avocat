@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabrièle Nataf | Avocat en Droit des Étrangers, Immobilier & Famille</title>
+    <link rel="icon" type="image/png" href="assets/logo_gn_blue.png">
+    <meta name="description"
+        content="Cabinet d'avocat Gabrièle Nataf à Paris. Expertise en droit des étrangers, droit immobilier et droit de la famille. Prenez rendez-vous en ligne.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo_gn_blue.png" alt="Cabinet Gabrièle Nataf" class="logo-large">
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <a href="rdv.html" class="btn btn-appointment mobile-rdv-btn">RDV</a>
+
+                <button class="hamburger" id="hamburger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links">
+                    <li><a href="#domaines">Domaines</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-appointment-desktop"><a href="rdv.html" class="btn btn-appointment">Prendre
+                            rendez-vous</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero container reveal">
+            <img src="assets/logo_final.png" alt="" class="hero-watermark">
+            <div class="hero-content">
+                <p class="subtitle reveal-delay-1">BIENVENUE AU CABINET GABRIÈLE NATAF</p>
+                <h1 class="reveal-delay-2">Avocat en droit des étrangers et droit de la famille</h1>
+                <p class="hero-description reveal-delay-3">
+                    Cabinet dédié à la défense de vos droits en matière de droit des étrangers, de droit de la famille
+                    et de droit immobilier.
+                </p>
+                <div class="hero-actions reveal-delay-3">
+                    <a href="rdv.html" class="btn btn-appointment">Prendre rendez-vous</a>
+                    <a href="#domaines" class="btn btn-outline">Domaines d'intervention</a>
+                </div>
+            </div>
+            <div class="hero-card reveal reveal-delay-2">
+                <div class="card-inner">
+                    <p class="card-cabinet">CABINET</p>
+                    <h2 class="card-name">Gabrièle Nataf</h2>
+                    <p class="card-title">AVOCAT</p>
+                    <div class="card-divider"></div>
+                    <div class="card-info"
+                        style="display: flex; flex-direction: column; text-align: center; gap: 10px;">
+                        <div class="info-item">
+                            <span><strong>Mail :</strong> contact@natafavocat.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span><strong>Adresse :</strong> 5 rue du Renard, 75004 Paris</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Domaines d'intervention -->
+        <section id="domaines" class="section-bg reveal">
+            <div class="container text-center">
+                <h2 class="reveal">Domaines d'intervention</h2>
+                <p class="section-subtitle reveal reveal-delay-1">Chaque situation étant unique, le cabinet assure un
+                    accompagnement juridique attentif et adapté dans plusieurs domaines du droit.</p>
+
+                <div class="grid grid-4">
+                    <div class="card card-illustration reveal">
+                        <div class="illustration-box">
+                            <!-- Passport / Globe SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="2" y1="12" x2="22" y2="12"></line>
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Droit des étrangers</h3>
+                        <p>Assistance dans les procédures de régularisation, titre de séjour, naturalisation et recours
+                            administratifs.</p>
+
+                        <div class="dropdown-container">
+                            <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                                <span>Plus de détails</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <h4>Intervention en droit des étrangers</h4>
+                                <ul class="dropdown-list">
+                                    <li>Demande de titre de séjour</li>
+                                    <li>Recours OQTF</li>
+                                    <li>Naturalisation</li>
+                                    <li>Regroupement familial</li>
+                                    <li>Asile et protection subsidiaire</li>
+                                    <li>Contentieux visa</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-illustration reveal reveal-delay-1">
+                        <div class="illustration-box">
+                            <!-- Family / Hands SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                        </div>
+                        <h3>Droit de la famille</h3>
+                        <p>Conseil et défense en matière de divorce par consentement mutuel ou contentieux, et
+                            successions.</p>
+
+                        <div class="dropdown-container">
+                            <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                                <span>Plus de détails</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <h4>Procédures familiales</h4>
+                                <ul class="dropdown-list">
+                                    <li>Divorce par consentement mutuel</li>
+                                    <li>Divorce contentieux</li>
+                                    <li>Séparation de corps</li>
+                                    <li>Liquidation de régime matrimonial</li>
+                                    <li>Adoption</li>
+                                    <li>Successions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- New Card: Assistance Educative -->
+                    <div class="card card-illustration reveal reveal-delay-2">
+                        <div class="illustration-box">
+                            <!-- Child / Protection SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <path d="M8 11h8"></path>
+                                <path d="M12 15V7"></path>
+                            </svg>
+                        </div>
+                        <h3>Assistance éducative</h3>
+                        <p>Défense des parents et des mineurs en assistance éducative et droit de l'enfance.</p>
+
+                        <div class="dropdown-container">
+                            <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                                <span>Plus de détails</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <h4>Assistance éducative et droit de l’enfance</h4>
+                                <ul class="dropdown-list">
+                                    <li>Placement d’enfants</li>
+                                    <li>AEMO (Action Éducative en Milieu Ouvert)</li>
+                                    <li>MJIE (Mesure Judiciaire d'Investigation Éducative)</li>
+                                    <li>AED (Aide Éducative à Domicile)</li>
+                                    <li>Procédure devant la Cour d’Appel</li>
+                                    <li>Tiers digne de confiance</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-illustration reveal reveal-delay-3">
+                        <div class="illustration-box">
+                            <!-- Real Estate / Key SVG -->
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3-3.5 3.5z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3>Droit immobilier</h3>
+                        <p>Accompagnement dans vos projets immobiliers : litiges locatifs, achats, ventes et baux.</p>
+
+                        <div class="dropdown-container">
+                            <button class="dropdown-toggle" onclick="toggleDropdown(this)">
+                                <span>Plus de détails</span>
+                                <svg class="chevron" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                </svg>
+                            </button>
+                            <div class="dropdown-content">
+                                <h4>Conseil et contentieux immobilier</h4>
+                                <ul class="dropdown-list">
+                                    <li>Baux d'habitation et commerciaux</li>
+                                    <li>Expulsions locatives</li>
+                                    <li>Troubles de voisinage</li>
+                                    <li>Copropriété</li>
+                                    <li>Ventes immobilières</li>
+                                    <li>Litiges de construction</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider reveal"></div>
+
+        <!-- À propos -->
+        <section id="a-propos" class="reveal section-with-bg">
+            <div class="container">
+                <div class="grid grid-2 items-center">
+                    <div class="about-image reveal">
+                        <div class="image-frame">
+                            <img src="assets/portrait_updated.png" alt="Gabrièle Nataf"
+                                class="img-responsive rounded shadow">
+                        </div>
+                    </div>
+                    <div class="about-content reveal reveal-delay-1">
+                        <h2>À propos</h2>
+                        <p>Maître Gabrièle NATAF a acquis une solide expérience en cabinet d’avocat avant de cofonder
+                            ACDN
+                            Avocats aux côtés de confrères rencontrés sur les bancs de la faculté.</p>
+                        <p>
+                            Elle exerce désormais à titre individuel afin de proposer un accompagnement personnalisé,
+                            structuré autour d’une écoute attentive, un dévouement constant, ainsi qu’une intervention
+                            menée
+                            avec sérieux et détermination. Elle veille à offrir des conseils clairs et une défense
+                            efficace,
+                            adaptés aux enjeux humains et juridiques de chaque dossier.
+                        </p>
+                        <p>Maître Gabrièle NATAF intervient en droit des étrangers, assistance éducative (protection de
+                            l’enfance), droit de la famille et droit immobilier.</p>
+                        <a href="rdv.html" class="btn btn-appointment">En savoir plus</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact & Maps -->
+        <section id="contact" class="section-bg reveal">
+            <div class="container">
+                <div class="grid grid-2">
+                    <div class="contact-info">
+                        <h2>Contact</h2>
+                        <div class="info-group">
+                            <div class="info-block">
+                                <strong>Adresse</strong>
+                                <p>5 rue du Renard,<br>75004 Paris</p>
+                            </div>
+                            <div class="info-block">
+                                <strong>Email</strong>
+                                <p>contact@natafavocat.com</p>
+                            </div>
+                        </div>
+                        <div class="map-container rounded shadow">
+                            <!-- Google Maps Iframe Placeholder -->
+                            <iframe
+                                src="https://maps.google.com/maps?q=5+rue+du+Renard,+75004+Paris&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                    <div class="contact-form-container">
+                        <form id="contact-form" action="https://formsubmit.co/contact@natafavocat.com" method="POST"
+                            class="card shadow p-4">
+                            <!-- Configuration FormSubmit -->
+                            <input type="hidden" name="_subject" value="Nouveau message depuis le site">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_next" value="https://gabrielenataf-avocat.com/merci.html">
+                            <!-- Note: _next redirect will default to FormSubmit page if URL doesn't exist. I'll stick to default or create a thank you page logic later, let's just use default or empty to stay on page -->
+                            <input type="hidden" name="_autoresponse"
+                                value="Merci pour votre message. Nous reviendrons vers vous très vite.">
+
+                            <div class="form-group">
+                                <label for="name">Nom</label>
+                                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Votre email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Objet</label>
+                                <input type="text" id="subject" name="subject" placeholder="Objet de votre demande"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Votre message"
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-full">Envoyer le message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="assets/logo_gn_white.png" alt="Cabinet Gabrièle Nataf"
+                    style="height: 100px; margin: 0 auto 20px auto; display: block;">
+            </div>
+            <p>&copy; 2026 Gabrièle Nataf Avocat. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="#">Mentions légales</a> | <a href="#">Politique de confidentialité</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
