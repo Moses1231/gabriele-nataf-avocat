@@ -701,8 +701,7 @@
         <div class="booking-instructions reveal">
             <h3>Comment réserver ?</h3>
             <ul>
-                <li>Consultez le calendrier ci-dessous pour voir les créneaux disponibles</li>
-                <li>Cliquez sur un créneau libre pour créer votre rendez-vous</li>
+                <li>Choisissez un créneau disponible dans le calendrier ci-dessous</li>
                 <li>Remplissez vos informations (nom, email, motif de consultation)</li>
                 <li>Vous recevrez une confirmation par email avec les détails de votre rendez-vous</li>
                 <li>Un lien de visioconférence vous sera envoyé si vous choisissez cette option</li>
@@ -710,59 +709,8 @@
         </div>
 
         <div class="calendar-wrapper reveal">
-            <!-- Calendar Header with Navigation -->
-            <div class="calendar-header-nav">
-                <button class="week-nav-btn" id="prevWeek">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="15 18 9 12 15 6"></polyline>
-                    </svg>
-                </button>
-                <h2 id="currentWeekDisplay">Semaine du 10 au 16 février 2026</h2>
-                <button class="week-nav-btn" id="nextWeek">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polyline points="9 18 15 12 9 6"></polyline>
-                    </svg>
-                </button>
-            </div>
-
-            <!-- Weekly Calendar Grid -->
-            <div class="weekly-calendar">
-                <!-- Time Column -->
-                <div class="time-column">
-                    <div class="time-header"></div>
-                    <div class="time-slot">09:00</div>
-                    <div class="time-slot">10:00</div>
-                    <div class="time-slot">11:00</div>
-                    <div class="time-slot">12:00</div>
-                    <div class="time-slot">14:00</div>
-                    <div class="time-slot">15:00</div>
-                    <div class="time-slot">16:00</div>
-                    <div class="time-slot">17:00</div>
-                    <div class="time-slot">18:00</div>
-                    <div class="time-slot">19:00</div>
-                </div>
-
-                <!-- Days Columns -->
-                <div class="days-grid" id="daysGrid">
-                    <!-- Will be populated by JavaScript -->
-                </div>
-            </div>
-
-            <!-- Legend -->
-            <div class="calendar-legend">
-                <div class="legend-item">
-                    <span class="legend-color available"></span>
-                    <span>Disponible</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-color booked"></span>
-                    <span>Réservé</span>
-                </div>
-                <div class="legend-item">
-                    <span class="legend-color selected"></span>
-                    <span>Sélectionné</span>
-                </div>
-            </div>
+            <div class="calendly-inline-widget" data-url="https://calendly.com/contact-natafavocat/consultation-juridique" style="min-width:320px;height:700px;"></div>
+            <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
         </div>
 
         <div class="alternative-contact reveal">
@@ -785,64 +733,7 @@
         </div>
     </footer>
 
-    <!-- Booking Modal -->
-    <div id="bookingModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2>Réserver votre rendez-vous</h2>
-                <button class="modal-close" id="closeModal">&times;</button>
-            </div>
-            <div class="modal-body">
-                <p class="selected-time" id="selectedTimeDisplay"></p>
-                <form id="bookingForm">
-                    <div class="form-group">
-                        <label for="clientName">Nom complet *</label>
-                        <input type="text" id="clientName" name="name" required placeholder="Votre nom et prénom">
-                    </div>
-                    <div class="form-group">
-                        <label for="clientEmail">Email *</label>
-                        <input type="email" id="clientEmail" name="email" required placeholder="votre@email.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="clientPhone">Téléphone *</label>
-                        <input type="tel" id="clientPhone" name="phone" required placeholder="06 12 34 56 78">
-                    </div>
-                    <div class="form-group">
-                        <label for="consultationType">Type de consultation *</label>
-                        <select id="consultationType" name="type" required>
-                            <option value="">Choisissez...</option>
-                            <option value="cabinet">Au cabinet (5 rue du Renard, Paris)</option>
-                            <option value="visio">Visioconférence</option>
-                            <option value="phone">Par téléphone</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="consultationSubject">Objet de la consultation *</label>
-                        <textarea id="consultationSubject" name="subject" required rows="3"
-                            placeholder="Décrivez brièvement le motif de votre consultation..."></textarea>
-                    </div>
-                    <div class="form-actions">
-                        <button type="button" class="btn btn-secondary" id="cancelBooking">Annuler</button>
-                        <button type="submit" class="btn btn-primary">Confirmer le rendez-vous</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Success Modal -->
-    <div id="successModal" class="modal">
-        <div class="modal-content success-content">
-            <div class="success-icon">✓</div>
-            <h2>Rendez-vous confirmé !</h2>
-            <p>Votre rendez-vous a été enregistré avec succès.</p>
-            <p class="success-details" id="successDetails"></p>
-            <button class="btn btn-primary" id="closeSuccess">Fermer</button>
-        </div>
-    </div>
-
     <script src="script.js"></script>
-    <script src="agenda.js"></script>
 </body>
 
 </html>
